@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMIN ORGANICS | Pure • Premium • Trusted</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+    html{scroll-behavior:smooth}
+    body{background:#faf8f0;color:#183b1b}
+    header{
+      position:sticky;top:0;z-index:1000;
+      background:#fff;box-shadow:0 3px 15px #0002;
+      padding:10px 6%;display:flex;align-items:center;justify-content:space-between
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:75px;height:75px;object-fit:contain}
+    .brand span{font-size:24px;font-weight:800;color:#0d421c}
+    nav a{color:#163c1b;text-decoration:none;margin-left:24px;font-weight:600}
+    nav a:hover{color:#b78608}
+    .hero{
+      min-height:82vh;display:flex;align-items:center;justify-content:center;
+      text-align:center;padding:50px 6%;
+      background:linear-gradient(135deg,#f8f3df,#edf5e8)
+    }
+    .hero-logo{width:min(360px,75vw);margin-bottom:20px}
+    .hero h1{font-size:52px;color:#0d421c;margin-bottom:10px}
+    .hero p{font-size:20px;color:#536052;margin-bottom:28px}
+    .btn{display:inline-block;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:700;margin:5px}
+    .primary{background:#0d421c;color:white}.gold{background:#c79a18;color:white}
+    section{padding:75px 7%}
+    .title{text-align:center;margin-bottom:40px}
+    .title h2{font-size:36px;color:#0d421c;margin-bottom:10px}
+    .title p{color:#666}
+    .about{max-width:1000px;margin:auto;text-align:center}
+    .about p{font-size:18px;line-height:1.8;color:#555}
+    .founder{margin:28px auto 0;max-width:500px;padding:22px;background:white;border-radius:16px;box-shadow:0 5px 20px #0001}
+    .founder h3{font-size:24px;color:#0d421c}.founder p{font-size:16px;margin-top:5px}
+    .products{background:#f0eee2}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:1200px;margin:auto}
+    .card{background:white;border-radius:16px;padding:28px;text-align:center;box-shadow:0 5px 18px #0001}
+    .card .icon{font-size:50px;margin-bottom:14px}
+    .card h3{color:#0d421c;margin-bottom:8px}.card p{color:#777;margin-bottom:18px}
+    .order{background:#0d421c;color:#fff;padding:10px 20px;border-radius:22px;text-decoration:none}
+    .wholesale{background:#0d421c;color:white;text-align:center}
+    .wholesale h2{font-size:38px;margin-bottom:15px}.wholesale p{max-width:700px;margin:0 auto 25px;line-height:1.7}
+    .contact{max-width:850px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .contact-box{background:white;padding:30px;border-radius:16px;box-shadow:0 5px 18px #0001}
+    .contact-box h3{color:#0d421c;margin-bottom:18px}.contact-box p{margin:12px 0;color:#555;line-height:1.5}
+    footer{background:#092b12;color:white;text-align:center;padding:30px}
+    footer img{width:90px;margin-bottom:10px}
+    .wa{position:fixed;right:20px;bottom:20px;background:#25d366;color:white;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:27px;box-shadow:0 4px 15px #0003}
+    @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}}
+    @media(max-width:600px){
+      header{padding:8px 4%;}.brand img{width:58px;height:58px}.brand span{font-size:18px}
+      nav a{margin-left:8px;font-size:12px}.hero h1{font-size:36px}.hero p{font-size:17px}
+      .grid{grid-template-columns:1fr}.title h2{font-size:30px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img src="amin-organics-logo.png" alt="AMIN ORGANICS Logo">
+    <span>AMIN ORGANICS</span>
+  </div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#wholesale">Wholesale</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <img class="hero-logo" src="amin-organics-logo.png" alt="AMIN ORGANICS">
+    <h1>Pure • Premium • Trusted</h1>
+    <p>Premium Dry Fruits, Nuts, Seeds, Dates & Super Foods</p>
+    <a class="btn primary" href="#products">Explore Products</a>
+    <a class="btn gold" href="https://wa.me/919390285985">WhatsApp Order</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="title"><h2>About AMIN ORGANICS</h2><p>Quality products for a healthy lifestyle</p></div>
+  <div class="about">
+    <p>AMIN ORGANICS brings premium quality dry fruits, nuts, seeds, dates and super foods to customers with a focus on purity, freshness and trust.</p>
+    <div class="founder">
+      <h3>Mr. Shaik Khadar Hussain</h3>
+      <p><strong>Founder & CEO</strong></p>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="title"><h2>Our Products</h2><p>Premium products from AMIN ORGANICS</p></div>
+  <div class="grid">
+    <div class="card"><div class="icon">🥜</div><h3>Almonds</h3><p>Premium Quality</p><a class="order" href="https://wa.me/919390285985">Order Now</a></div>
+    <div class="card"><div class="icon">🌰</div><h3>Cashews</h3><p>Premium Quality</p><a class="order" href="https://wa.me/919390285985">Order Now</a></div>
+    <div class="card"><div class="icon">🍇</div><h3>Raisins</h3><p>Fresh & Natural</p><a class="order" href="https://wa.me/919390285985">Order Now</a></div>
+    <div class="card"><div class="icon">🌴</div><h3>Dates</h3><p>Premium Dates</p><a class="order" href="https://wa.me/919390285985">Order Now</a></div>
+    <div class="card"><div class="icon">🎃</div><h3>Pumpkin Seeds</h3><p>Healthy & Natural</p><a class="order" href="https://wa.me/919390285985">Order Now</a></div>
+    <div class="card"><div class="icon">🌻</div><h3>Sunflower Seeds</h3><p>Healthy Choice</p><a class="order" href="https://wa.me/919390285985">Order Now</a></div>
+    <div class="card"><div class="icon">🌱</div><h3>Chia Seeds</h3><p>Natural Nutrition</p><a class="order" href="https://wa.me/919390285985">Order Now</a></div>
+    <div class="card"><div class="icon">🌿</div><h3>Flax Seeds</h3><p>Premium Quality</p><a class="order" href="https://wa.me/919390285985">Order Now</a></div>
+  </div>
+</section>
+
+<section class="wholesale" id="wholesale">
+  <h2>Wholesale & Bulk Orders</h2>
+  <p>Retailers, distributors and bulk buyers can contact AMIN ORGANICS for business enquiries and wholesale orders.</p>
+  <a class="btn gold" href="https://wa.me/919390285985">Contact for Wholesale</a>
+</section>
+
+<section id="contact">
+  <div class="title"><h2>Contact Us</h2><p>We are happy to hear from you</p></div>
+  <div class="contact">
+    <div class="contact-box">
+      <h3>AMIN ORGANICS</h3>
+      <p>👤 <strong>Founder & CEO:</strong><br>Mr. Shaik Khadar Hussain</p>
+      <p>📞 <strong>Phone:</strong><br>9390285985</p>
+    </div>
+    <div class="contact-box">
+      <h3>Business Enquiry</h3>
+      <p>For Retail, Wholesale, Bulk Orders and Business Enquiries, contact us directly on WhatsApp.</p>
+      <a class="btn primary" href="https://wa.me/919390285985">Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="amin-organics-logo.png" alt="AMIN ORGANICS Logo">
+  <p><strong>AMIN ORGANICS</strong></p>
+  <p>Pure • Premium • Trusted</p>
+  <p>Founder & CEO – Mr. Shaik Khadar Hussain</p>
+  <p>© 2026 AMIN ORGANICS. All Rights Reserved.</p>
+</footer>
+
+<a class="wa" href="https://wa.me/919390285985" aria-label="WhatsApp">☎</a>
+</body>
+</html>
