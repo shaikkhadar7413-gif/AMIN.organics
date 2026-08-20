@@ -29,7 +29,7 @@ header{
   top:0;
   z-index:1000;
   background:white;
-  padding:10px 6%;
+  padding:8px 6%;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -37,8 +37,8 @@ header{
 }
 
 .logo img{
-  width:65px;
-  height:65px;
+  width:95px;
+  height:95px;
   object-fit:contain;
   display:block;
 }
@@ -49,15 +49,23 @@ nav a{
   font-weight:bold;
 }
 
-/* HERO */
+/* HOME */
 .hero{
-  min-height:80vh;
-  padding:60px 7%;
+  min-height:85vh;
+  padding:50px 7%;
   display:flex;
   align-items:center;
   justify-content:center;
   text-align:center;
   background:linear-gradient(135deg,#f7f0d9,#eaf4e8);
+}
+
+.home-logo{
+  width:210px;
+  height:210px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto 20px;
 }
 
 .hero h1{
@@ -190,11 +198,6 @@ section{
   line-height:1.7;
 }
 
-/* CUSTOMER FEEDBACK */
-.feedback{
-  background:#faf9f2;
-}
-
 /* CONTACT */
 .contact{
   max-width:850px;
@@ -269,6 +272,16 @@ footer{
 
 @media(max-width:500px){
 
+  .logo img{
+    width:75px;
+    height:75px;
+  }
+
+  .home-logo{
+    width:160px;
+    height:160px;
+  }
+
   .grid{
     grid-template-columns:1fr;
   }
@@ -297,7 +310,6 @@ footer{
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#products">Products</a>
-    <a href="#feedback">Customer Feedback</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -308,6 +320,11 @@ footer{
 <section class="hero" id="home">
 
   <div>
+
+    <!-- BIG LOGO ON HOMEPAGE -->
+    <img src="amin-organics-logo.png"
+         alt="AMIN ORGANICS Logo"
+         class="home-logo">
 
     <h1>Pure • Premium • Trusted</h1>
 
@@ -470,62 +487,6 @@ footer{
 </section>
 
 
-<!-- CUSTOMER FEEDBACK -->
-<section class="feedback" id="feedback">
-
-  <div class="title">
-
-    <h2>Customer Feedback</h2>
-
-    <p>
-      What our customers say about AMIN ORGANICS
-    </p>
-
-  </div>
-
-  <div class="grid">
-
-    <div class="card">
-
-      <div class="icon">💬</div>
-
-      <h3>Quality Products</h3>
-
-      <p>
-        “Good quality products and excellent service.”
-      </p>
-
-    </div>
-
-    <div class="card">
-
-      <div class="icon">💬</div>
-
-      <h3>Happy Customer</h3>
-
-      <p>
-        “Fresh products and quick response.”
-      </p>
-
-    </div>
-
-    <div class="card">
-
-      <div class="icon">💬</div>
-
-      <h3>Trusted Service</h3>
-
-      <p>
-        “Great service and premium quality.”
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
 <!-- CONTACT -->
 <section id="contact">
 
@@ -556,7 +517,6 @@ footer{
       </p>
 
     </div>
-
 
     <div class="contact-box">
 
