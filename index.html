@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>AMIN ORGANICS</title>
 
 <style>
@@ -135,6 +134,15 @@ section{
   box-shadow:0 5px 20px #0001;
 }
 
+.founder-photo{
+  width:160px;
+  height:160px;
+  object-fit:cover;
+  border-radius:50%;
+  display:block;
+  margin:0 auto 15px;
+}
+
 .founder h3{
   color:#0b421b;
 }
@@ -154,20 +162,30 @@ section{
 
 .card{
   background:white;
-  padding:25px;
+  padding:18px;
   text-align:center;
   border-radius:18px;
   box-shadow:0 5px 18px #0001;
+  transition:0.3s;
 }
 
-.icon{
-  font-size:45px;
-  margin-bottom:12px;
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.product-img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:15px;
+  display:block;
 }
 
 .card h3{
   color:#0b421b;
   margin-bottom:8px;
+  font-size:21px;
 }
 
 .card p{
@@ -293,6 +311,10 @@ footer{
   section{
     padding:55px 5%;
   }
+
+  .product-img{
+    height:220px;
+  }
 }
 </style>
 </head>
@@ -321,10 +343,11 @@ footer{
 
   <div>
 
-    <!-- BIG LOGO ON HOMEPAGE -->
-    <img src="amin-organics-logo.png"
-         alt="AMIN ORGANICS Logo"
-         class="home-logo">
+    <img
+      src="amin-organics-logo.png"
+      alt="AMIN ORGANICS Logo"
+      class="home-logo"
+    >
 
     <h1>Pure • Premium • Trusted</h1>
 
@@ -363,7 +386,13 @@ footer{
 
     <div class="founder">
 
-      <h3>Shaik Khadar Hussain</h3>
+      <img
+        src="founder.jpg"
+        alt="Mr. Khadar Hussain"
+        class="founder-photo"
+      >
+
+      <h3>Mr. Khadar Hussain</h3>
 
       <p>
         <strong>Founder & CEO</strong>
@@ -380,19 +409,15 @@ footer{
 <section class="products" id="products">
 
   <div class="title">
-
     <h2>Our Products</h2>
-
-    <p>
-      Premium quality products from AMIN ORGANICS
-    </p>
-
+    <p>Premium quality products from AMIN ORGANICS</p>
   </div>
 
   <div class="grid">
 
+    <!-- ALMONDS -->
     <div class="card">
-      <div class="icon">🥜</div>
+      <img src="almonds.jpg" alt="Premium Almonds" class="product-img">
       <h3>Almonds</h3>
       <p>Premium Quality</p>
       <a class="order" href="https://wa.me/919390285985">
@@ -400,8 +425,9 @@ footer{
       </a>
     </div>
 
+    <!-- CASHEWS -->
     <div class="card">
-      <div class="icon">🌰</div>
+      <img src="cashews.jpg" alt="Premium Cashews" class="product-img">
       <h3>Cashews</h3>
       <p>Premium Quality</p>
       <a class="order" href="https://wa.me/919390285985">
@@ -409,8 +435,9 @@ footer{
       </a>
     </div>
 
+    <!-- RAISINS -->
     <div class="card">
-      <div class="icon">🍇</div>
+      <img src="raisins.jpg" alt="Fresh Raisins" class="product-img">
       <h3>Raisins</h3>
       <p>Fresh & Natural</p>
       <a class="order" href="https://wa.me/919390285985">
@@ -418,17 +445,19 @@ footer{
       </a>
     </div>
 
+    <!-- DATES -->
     <div class="card">
-      <div class="icon">🌴</div>
-      <h3>Dates</h3>
-      <p>Premium Dates</p>
+      <img src="dates.jpg" alt="Premium Dates" class="product-img">
+      <h3>Premium Dates</h3>
+      <p>Fresh • Natural • Premium Quality</p>
       <a class="order" href="https://wa.me/919390285985">
         Order Now →
       </a>
     </div>
 
+    <!-- PUMPKIN SEEDS -->
     <div class="card">
-      <div class="icon">🎃</div>
+      <img src="pumpkin-seeds.jpg" alt="Pumpkin Seeds" class="product-img">
       <h3>Pumpkin Seeds</h3>
       <p>Healthy & Natural</p>
       <a class="order" href="https://wa.me/919390285985">
@@ -436,8 +465,9 @@ footer{
       </a>
     </div>
 
+    <!-- SUNFLOWER SEEDS -->
     <div class="card">
-      <div class="icon">🌻</div>
+      <img src="sunflower-seeds.jpg" alt="Sunflower Seeds" class="product-img">
       <h3>Sunflower Seeds</h3>
       <p>Healthy Choice</p>
       <a class="order" href="https://wa.me/919390285985">
@@ -445,8 +475,9 @@ footer{
       </a>
     </div>
 
+    <!-- CHIA SEEDS -->
     <div class="card">
-      <div class="icon">🌱</div>
+      <img src="chia-seeds.jpg" alt="Chia Seeds" class="product-img">
       <h3>Chia Seeds</h3>
       <p>Natural Nutrition</p>
       <a class="order" href="https://wa.me/919390285985">
@@ -454,8 +485,9 @@ footer{
       </a>
     </div>
 
+    <!-- FLAX SEEDS -->
     <div class="card">
-      <div class="icon">🌿</div>
+      <img src="flax-seeds.jpg" alt="Flax Seeds" class="product-img">
       <h3>Flax Seeds</h3>
       <p>Premium Quality</p>
       <a class="order" href="https://wa.me/919390285985">
@@ -491,13 +523,8 @@ footer{
 <section id="contact">
 
   <div class="title">
-
     <h2>Contact Us</h2>
-
-    <p>
-      We are happy to hear from you
-    </p>
-
+    <p>We are happy to hear from you</p>
   </div>
 
   <div class="contact">
@@ -508,7 +535,7 @@ footer{
 
       <p>
         👤 <strong>Founder & CEO:</strong><br>
-        Shaik Khadar Hussain
+        Mr. Khadar Hussain
       </p>
 
       <p>
@@ -529,8 +556,7 @@ footer{
 
       <br>
 
-      <a class="btn green"
-         href="https://wa.me/919390285985">
+      <a class="btn green" href="https://wa.me/919390285985">
         Chat on WhatsApp
       </a>
 
@@ -546,25 +572,20 @@ footer{
 
   <h2>🌿 AMIN ORGANICS</h2>
 
-  <p>
-    Pure • Premium • Trusted
-  </p>
+  <p>Pure • Premium • Trusted</p>
 
-  <p>
-    Founder & CEO – Shaik Khadar Hussain
-  </p>
+  <p>Founder & CEO – Mr. Khadar Hussain</p>
 
-  <p>
-    © 2026 AMIN ORGANICS. All Rights Reserved.
-  </p>
+  <p>© 2026 AMIN ORGANICS. All Rights Reserved.</p>
 
 </footer>
 
 
-<!-- WHATSAPP BUTTON -->
-<a class="wa"
-   href="https://wa.me/919390285985"
-   aria-label="WhatsApp">
+<!-- WHATSAPP -->
+<a
+  class="wa"
+  href="https://wa.me/919390285985"
+  aria-label="WhatsApp">
   ☎
 </a>
 
